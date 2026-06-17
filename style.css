@@ -224,25 +224,41 @@ nav ul li a:hover{
 
 .prod{
     text-align: center;
+    margin: 30px 0;
 }
 
 .product{
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .products{
-    background-color: #ccc;
-    width: 20%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;   /* Center the grid */
+
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
-    margin: 0 25%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+.products img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-.products img
-{
-    height: 200px;
-    object-fit: cover; 
-
+.products img:hover{
+    transform: scale(1.05);
+}
+.card{
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
 }
