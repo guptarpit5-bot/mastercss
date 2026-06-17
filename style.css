@@ -214,4 +214,9 @@ nav ul li a:hover{
 .arrow img:hover{
     transform: scale(1.1);
 }
+.footer:hover
+{
+    cursor: pointer;
+    box-shadow:17px -2px 15px 3px rgba(204,24,184,0.45)
+}
 
