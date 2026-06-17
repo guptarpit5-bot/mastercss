@@ -28,6 +28,15 @@
     </div>
   
   </div>
+  <h2 class="prod">products</h2>
+  <div class="product">
+      <div class="products">
+        <img src="img/art1.jpg" alt="">
+        <img src="img/art2.jpg" alt="">
+        <img src="img/art3.jpg" alt="">
+        <img src="img/art4.jpg" alt="">
+      </div>
+      </div>
     
     <!--GAllERY SECTION-->
     <CENTER><h1>gallery</h1></CENTER>
@@ -50,18 +59,18 @@
       <form method="post" id="contactus">
    
     <label>user name
-      <input type="text" placeholder="enter your name">
+      <input type="text" placeholder="enter your name" id="fname">
     </label>
     <label>mobile number
-      <input type="value" maxlength="10" placeholder="enter your numebr">
+      <input type="tel" maxlength="10" placeholder="enter your numebr" id="num">
     </label>
     <label>email
-      <input type="email" placeholder="enter your email">
+      <input type="email" placeholder="enter your email" id="mail">
     </label>
     <label>query
-     <textarea name="" rows="3" cols="5" maxlength="50" placeholder="ENTER ANY QUERY FROM YOUR SIDE MUST BE UNDER THE 50 WORDS"></textarea>
+     <textarea name="" rows="3" cols="5" maxlength="50" placeholder="ENTER ANY QUERY FROM YOUR SIDE MUST BE UNDER THE 50 WORDS" id="query"></textarea>
     </label>
-      <button type="submit">Submit</button>
+      <button type="submit" onclick="validateform()">Submit</button>
     </form>
     </div>
       <div class="arrow">
@@ -84,5 +93,19 @@
 
 
   </main>
+  <script>  
+    function validateform()
+    {
+      let x = document.getElementById("fname").value;
+      if (x== "")
+    {
+      alert("name cannot be empty")
+    }
+    else
+    {
+        alert("welcome Mr "+ x)
+    }
+    }
+  </script>
 </body>
 </html>

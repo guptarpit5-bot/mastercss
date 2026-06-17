@@ -46,6 +46,7 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
+
 /* HOME SECTION */
 .home{
     text-align: center;
@@ -63,6 +64,7 @@ nav ul li a:hover{
 .gallery{
     padding: 50px 20px;
     text-align: center;
+    
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     /* grid-template-rows: 1fr 1fr 1fr; */
@@ -220,3 +222,27 @@ nav ul li a:hover{
     box-shadow:17px -2px 15px 3px rgba(204,24,184,0.45)
 }
 
+.prod{
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+}
+
+.products{
+    background-color: #ccc;
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin: 0 25%;
+}
+
+.products img
+{
+    height: 200px;
+    object-fit: cover; 
+
+}
